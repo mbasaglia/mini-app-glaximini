@@ -22,16 +22,16 @@ If you are planning to run from docker, somewhere in your home directory will al
 
 
 There are [multiple apps](../apps/index.md) available, this guide will set up
-the [Tic Tac Toe](../apps/tic_tac_toe.md) app, but you can easily add more apps.
+the [Glaximini](../apps/glaximini.md) app, but you can easily add more apps.
 
 
 ## Bot Setup
 
 Talk to [BotFather](https://t.me/BotFather) and create a bot, keep note of the token it gives you as it's needed later.
 
-On that bot enable the _Menu Button_ under _Bot Settings_, and give it `https://miniapps.example.com/tic_tac_toe/` as URL.
+On that bot enable the _Menu Button_ under _Bot Settings_, and give it `https://miniapps.example.com/glaximini/` as URL.
 
-You need to create a new app on that bot (`/newapp`) with the same URL as the button, and `tic_tac_toe` short name.
+You need to create a new app on that bot (`/newapp`) with the same URL as the button, and `glaximini` short name.
 
 Finally, enable inline mode with `/setinline`.
 
@@ -79,11 +79,10 @@ with the following:
         "port": 2536
     },
     "apps": {
-        "tic_tac_toe": {
-            "class": "mini_apps.apps.tic_tac_toe.TicTacToe",
+        "glaximini": {
+            "class": "mini_apps.apps.glaximini.app.Glaximini",
             "bot-token": "(your bot token)",
-            "short-name": "tic_tac_toe",
-            "url": "https://miniapps.example.com/tic_tac_toe/"
+            "url": "https://miniapps.example.com/glaximini/"
         }
     },
     "api-id": "(your api id)",
@@ -95,8 +94,6 @@ The value for `bot-token` is the bot API token given by BotFather.
 The values for `api-id` and `api-hash` can be obtained from <https://my.telegram.org/apps>.
 
 `url` should be the public URL of your mini app, the same you specified on BotFather.
-
-`short-name` is the app short name that you set on BotFather with `/newapp`.
 
 If you want to run on the Telegram test server, add the following to the JSON,
 with the values from <https://my.telegram.org/apps>.

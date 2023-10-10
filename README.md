@@ -1,17 +1,18 @@
-Event Telegram Mini-App Demo
-============================
+Glaximini
+=========
 
-Mini Apps is a Python framework to create [Telegram Mini Apps](https://core.telegram.org/bots/webapps).
+This app allows the user to create animated stickers and share them on Telegram.
 
-There are some built-in apps that showcase the features of both this framework and the mini apps feature on Telegram:
+Live instance: [@GlaximiniBot](https://t.me/GlaximiniBot).
 
-_Tic Tac Toe_ allows you to play tic tac toe (also known as naughts and crosses) against another player on Telegram.
-
-_Mini Events_ is a demo app that shows a list of events the user can attend.
-
-_Glaximini_ is a more complex app that allows the user to create animated stickers and share them on Telegram.
+More info in the [Glaximini app page](./docs/apps/glaximini.md).
 
 Full documentation is available on [Read the Docs](https://mini-apps.readthedocs.io/en/latest/).
+
+
+## Limitations
+
+Currently it's limited to one animation per user, and the feature support is rather limited.
 
 
 Set Up
